@@ -1,0 +1,10 @@
+langchain
+langgraph
+langchain-community
+chromadb
+pypdf
+ollama
+python-dotenv
+fastapi
+uvicorn
+tqdm
