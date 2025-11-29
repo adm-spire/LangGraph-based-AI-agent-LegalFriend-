@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
-EMBED_MODEL = os.getenv("EMBED_MODEL", "nomic-embed-text")
+EMBED_MODEL = os.getenv("EMBED_MODEL", "bge-m3")
 LLM_MODEL = os.getenv("LLM_MODEL", "llama3.1:8b")
 CHROMA_PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", "db")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 500))

@@ -6,7 +6,7 @@ def get_vectorstore():
     """
     Returns a Chroma vector store instance persisted to CHROMA_PERSIST_DIR.
     """
-    embeddings = OllamaEmbeddings(model="nomic-embed-text")
+    embeddings = OllamaEmbeddings(model="bge-m3")
     db = Chroma(
         persist_directory=CHROMA_PERSIST_DIR,
         embedding_function=embeddings
